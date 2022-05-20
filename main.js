@@ -52,7 +52,7 @@ function convertToG(value, unit) {
     if (unit === "kg") {
         return Math.round((value / 0.001) * 100) / 100;
     } else if (unit === "lb") {
-        return Math.round((value / 0.002205) * 100) / 100;
+        return Math.round((value / 0.002204623) * 100) / 100;
     } else if (unit === "oz") {
         return Math.round((value / 0.035274) * 100) / 100;
     } else {
@@ -64,7 +64,7 @@ function convertToLb(value, unit) {
     if (unit === "kg") {
         return Math.round((value / 0.453515) * 100) / 100;
     } else if (unit === "g") {
-        return Math.round((value / 453.592) * 100) / 100;
+        return Math.round((value / 453.59237) * 100) / 100;
     } else if (unit === "oz") {
         return Math.round((value / 16) * 100) / 100;
     } else {
