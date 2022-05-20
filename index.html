@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weight Converter</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 text-center m-4">Weight Converter</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form" id="valueInput">
+                    <input class="form-control form-control-lg" type="number" placeholder="Enter Value...">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="radioBtns">
+                    <input class="unitInput" type="radio" value="kg" name="units" id="radioKilogram">
+                    <label class="unitLabel" for="radioKilogram">kg</label>
+                
+                    <input class="unitInput" type="radio" value="g" name="units" id="radioGram">
+                    <label class="unitLabel" for="radioGram">g</label>
+                
+                    <input class="unitInput" type="radio" value="lb" name="units" id="radioPound">
+                    <label class="unitLabel" for="radioPound">lb</label>
+                
+                    <input class="unitInput" type="radio" value="oz" name="units" id="radioOunce">
+                    <label class="unitLabel" for="radioOunce">oz</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div id="conversionOutputs">
+                    <div class="card card-body bg-secondary m-3" id="outputkg"></div>
+                    <div class="card card-body bg-secondary m-3" id="outputg"></div>
+                    <div class="card card-body bg-secondary m-3" id="outputlb"></div>
+                    <div class="card card-body bg-secondary m-3" id="outputoz"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
