@@ -30,3 +30,13 @@ body {
 .unitInput:checked + .unitLabel {
   background: #3d3d3d;
 }
+
+.units {
+  margin: 0 0 0;
+}
+
+.outputs {
+  margin: 0;
+  font-size: xx-large;
+  text-align: center;
+}

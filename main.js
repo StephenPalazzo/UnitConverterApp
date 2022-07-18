@@ -25,14 +25,10 @@ function calculate() {
   if (value !== '' && value > 0 && unit !== '') {
     conversionOutputs.style.visibility = 'visible';
 
-    document.getElementById('outputkg').innerHTML =
-      'Kilograms: ' + convertToKg(value, unit);
-    document.getElementById('outputg').innerHTML =
-      'Grams: ' + convertToG(value, unit);
-    document.getElementById('outputlb').innerHTML =
-      'Pounds: ' + convertToLb(value, unit);
-    document.getElementById('outputoz').innerHTML =
-      'Ounces: ' + convertToOz(value, unit);
+    document.getElementById('outputkg').innerHTML = convertToKg(value, unit);
+    document.getElementById('outputg').innerHTML = convertToG(value, unit);
+    document.getElementById('outputlb').innerHTML = convertToLb(value, unit);
+    document.getElementById('outputoz').innerHTML = convertToOz(value, unit);
   } else {
     conversionOutputs.style.visibility = 'hidden';
   }
